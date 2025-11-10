@@ -1,6 +1,8 @@
-# CKEditor 5 Track Changes Demo
+# CKEditor 5  Collaboration features iteration showcase
 
-A demonstration project showcasing CKEditor 5's premium collaboration features: track changes, revision history, comments, and real-time collaboration.
+A demonstration project showcasing CKEditor 5's premium collaboration features: track changes, revision history, comments, mentions, and real-time collaboration.
+
+![CKEditor 5 Track Changes Showcase](./demo-screenshot.png)
 
 ## Prerequisites
 
