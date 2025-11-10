@@ -2,7 +2,7 @@
 
 A demonstration project showcasing CKEditor 5's premium collaboration features: track changes, revision history, comments, mentions, and real-time collaboration.
 
-![CKEditor 5 Track Changes Showcase](./assets/sreenshot.png)
+![CKEditor 5 Track Changes Showcase](./assets/screenshot.png)
 
 ## Prerequisites
 
