@@ -1,5 +1,5 @@
 import { ClassicEditor, Essentials, Paragraph, Plugin } from 'ckeditor5';
-import { Comments, TrackChanges, TrackChangesPreview } from 'ckeditor5-premium-features';
+import { Comments, TrackChanges } from 'ckeditor5-premium-features';
 import 'ckeditor5/ckeditor5.css';
 import 'ckeditor5-premium-features/ckeditor5-premium-features.css';
 
@@ -36,6 +36,6 @@ class TrackChangesIntegration extends Plugin {}
 ClassicEditor
   .create(document.querySelector('#editor') as HTMLElement, {
     licenseKey: import.meta.env.VITE_CKEDITOR_LICENSE_KEY || 'GPL',
-    plugins: [Essentials, Paragraph, TrackChanges, Comments, UsersIntegration, TrackChangesPreview],
+    plugins: [Essentials, Paragraph, TrackChanges, Comments, UsersIntegration],
     toolbar: ['undo', 'redo', 'trackChanges'],
   })
