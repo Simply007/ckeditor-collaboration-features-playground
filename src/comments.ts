@@ -1,5 +1,5 @@
 import { ClassicEditor, Essentials, Paragraph, Plugin } from 'ckeditor5';
-import { Comments, TrackChanges } from 'ckeditor5-premium-features';
+import { Comments } from 'ckeditor5-premium-features';
 import 'ckeditor5/ckeditor5.css';
 import 'ckeditor5-premium-features/ckeditor5-premium-features.css';
 
