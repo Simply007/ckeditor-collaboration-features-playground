@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>track-changes</title>
+  <title>Collaboration features</title>
 </head>
 
 <body>
@@ -14,39 +14,55 @@
     <section>
       <h2>Step 1: Track Changes Minimal Example</h2>
       <p>See <code>track-changes.ts</code> file.</p>
-      <div class="editor-container__editor-wrapper">
-        <div class="editor-container__editor" id="editor"></div>
-        <div class="editor-container__sidebar" id="sidebar"> </div>
+      <div class="main-container">
+        <div class="editor-container editor-container_classic-editor editor-container_include-annotations"
+          id="editor-container">
+          <div class="editor-container__editor-wrapper">
+            <div class="editor-container__editor">
+              <div id="editor"></div>
+            </div>
+            <div class="editor-container__sidebar" id="editor-annotations"></div>
+          </div>
+        </div>
       </div>
     </section>
     <section>
       <h2>Step 2: Revisions History Minimal Example</h2>
       <p>See <code>revision-history.ts</code> file.</p>
-      <div
-        class="editor-container editor-container_classic-editor editor-container_include-outline editor-container_include-annotations editor-container_include-fullscreen"
-        id="editor-container2">
-        <div class="editor-container__editor-wrapper">
-          <div class="editor-container__sidebar" id="editor-outline2"></div>
-          <div class="editor-container__editor">
-            <div id="editor2"></div>
+      <div class="main-container">
+        <div
+          class="editor-container editor-container_classic-editor editor-container_include-outline editor-container_include-annotations editor-container_include-fullscreen"
+          id="editor-container2">
+          <div class="editor-container__editor-wrapper">
+            <div class="editor-container__editor">
+              <div id="editor2"></div>
+            </div>
+            <div class="editor-container__sidebar" id="editor-annotations2"></div>
           </div>
-          <div class="editor-container__sidebar" id="editor-annotations2"></div>
         </div>
-      </div>
-      <div class="revision-history" id="editor-revision-history2">
-        <div class="revision-history__wrapper">
-          <div class="revision-history__editor" id="editor-revision-history-editor2"></div>
-          <div class="revision-history__sidebar" id="editor-revision-history-sidebar2"></div>
+        <div class="revision-history" id="editor-revision-history2">
+          <div class="revision-history__wrapper">
+            <div class="revision-history__editor" id="editor-revision-history-editor2"></div>
+            <div class="revision-history__sidebar" id="editor-revision-history-sidebar2"></div>
+          </div>
         </div>
       </div>
     </section>
     <section>
       <h2>Step 3: Comments & Mentions Minimal Example</h2>
       <p>See <code>comments.ts</code> file.</p>
-      <div class="editor-container__editor-wrapper">
-        <div class="editor-container__editor" id="editor3"></div>
-        <div class="editor-container__sidebar" id="sidebar3"> </div>
+      <div class="main-container">
+        <div class="editor-container editor-container_classic-editor editor-container_include-annotations"
+          id="editor-container3">
+          <div class="editor-container__editor-wrapper">
+            <div class="editor-container__editor">
+              <div id="editor3"></div>
+            </div>
+            <div class="editor-container__sidebar" id="editor-annotations3"></div>
+          </div>
+        </div>
       </div>
+
     </section>
     <section>
       <h2>Step 4: Real time collaborations</h2>
@@ -60,7 +76,6 @@
           class="editor-container editor-container_classic-editor editor-container_include-outline editor-container_include-annotations editor-container_include-fullscreen"
           id="editor-container4">
           <div class="editor-container__editor-wrapper">
-            <div class="editor-container__sidebar" id="editor-outline4"></div>
             <div class="editor-container__editor">
               <div id="editor4"></div>
             </div>
@@ -92,11 +107,13 @@
       </ul>
     </section>
   </div>
-  <script type="module" src="/src/track-changes.ts"></script>
-  <script type="module" src="/src/revision-history.ts"></script>
-  <script type="module" src="/src/comments.ts"></script>
-  <script type="module" src="/src/real-time-collaborations.ts"></script>
-
+  <script type="module" src="/src/01-track-changes.ts"></script>
+  <script type="module" src="/src/02-revision-history.ts"></script>
+  <script type="module" src="/src/03-comments.ts"></script>
+  <script type="module" src="/src/04-real-time-collaborations.ts"></script>
+  <style>
+    @import "/src/style.css";
+  </style>
 </body>
 
 </html>

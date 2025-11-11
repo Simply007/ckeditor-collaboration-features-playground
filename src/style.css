@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@media print {
+	body {
+		margin: 0 !important;
+	}
+}
+
+:root {
+	--ck-content-font-family: 'Lato';
+	--ck-sidebar-width: 270px;
+}
+
+.main-container {
+	font-family: var(--ck-content-font-family);
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+.main-container .presence {
+	margin-bottom: 8px;
+}
+
+.editor-container {
+	background-color: #fafafa;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.editor-container__editor-wrapper {
+	display: flex;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.editor-container_include-annotations .editor-container__editor .ck.ck-editor__editable {
+	margin-right: 0;
+}
+
+.editor-container_classic-editor .editor-container__editor {
+	min-width: 795px;
+	max-width: 795px;
+}
+
+.editor-container__sidebar {
+	min-width: var(--ck-sidebar-width);
+	max-width: var(--ck-sidebar-width);
+	margin-top: 28px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.revision-history {
+	display: none;
+	margin-top: 20px;
+}
+
+.revision-history__wrapper {
+	display: flex;
+	background-color: #fafafa;
+	padding: 20px;
+	border-radius: 4px;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.revision-history__wrapper .ck.ck-editor {
+	margin: 0;
+	width: 795px;
+}
+
+.revision-history__wrapper .revision-history__sidebar {
+	border: 1px solid var(--ck-color-base-border);
+	border-left: 0;
+	width: var(--ck-sidebar-width);
+	min-height: 100%;
+}
+
+.revision-history__wrapper .revision-history__sidebar .ck-revision-history-sidebar {
+	height: 100%;
+}
+
+/* Section card styling */
+body {
+	font-family: system-ui, -apple-system, sans-serif;
+	margin: 0;
+	padding: 20px;
+	background-color: #f5f5f5;
+}
+
+#app {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+section {
+	margin-bottom: 40px;
+	background: white;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	border: 1px solid #e0e0e0;
+}
+
+section h2 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	color: #333;
+	font-size: 1.5rem;
+}
+
+section > p {
+	margin-top: 0;
+	margin-bottom: 20px;
+	color: #666;
+}
+
+section > p code {
+	background-color: #f5f5f5;
+	padding: 2px 6px;
+	border-radius: 3px;
+	font-family: monospace;
+	font-size: 0.9em;
+}
+
+#app > h1 {
+	text-align: center;
+	color: #333;
+	margin-bottom: 40px;
+	font-size: 2rem;
+}
+
+section ul {
+	color: #666;
+	line-height: 1.6;
+}
+
+section ul li {
+	margin-bottom: 10px;
+}
+
+section a {
+	color: #0066cc;
+	text-decoration: none;
+}
+
+section a:hover {
+	text-decoration: underline;
+}
